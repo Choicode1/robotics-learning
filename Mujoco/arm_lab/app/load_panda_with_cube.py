@@ -25,8 +25,8 @@ def main():
 
     xml_path = (
         project_root
-        / "custom_models"
-        / "panda_with_object"
+        / "mujoco_menagerie"
+        / "franka_emika_panda"
         / "scene_with_cube.xml"
     )
 
