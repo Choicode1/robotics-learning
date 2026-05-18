@@ -12,3 +12,10 @@ Rust 특징:
   - Ownership 시스템(소유권 규칙 사용). 메모리를 자동으로 관리. GC없음
   - Zero-cost Abstraction. 추상화해도 성능 손해 없음.
 
+Rust만 가능한것
+같은 변수 이름으로 다시 선언 가능
+
+let x = 10;
+let x = x + 5;
+
+println!("{}", x); // 15
