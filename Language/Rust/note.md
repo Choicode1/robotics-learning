@@ -15,23 +15,25 @@ Rust 특징:
 Rust만 가능한것
 같은 변수 이름으로 다시 선언 가능
 
-let x = 10;
-let x = x + 5;
-
-println!("{}", x); // 15
+    let x = 10;
+    let x = x + 5;
+    
+    println!("{}", x); // 15
 
 ---------------------------------------------
-let s1 = String::from("hello");  -> heap메모리
-let s2 = s1;
+    let s1 = String::from("hello");  //heap메모리
+    let s2 = s1;
 - 이 경우 s1은 사라진다. s2로 소유권 이전
 - 스코프{}를 벗어나면 메모리 해제
 
-let s1 = 10;  -> 정수는 stack메모리
-let s2 = s1;
+
+        let s1 = 10;  //정수는 stack메모리
+        let s2 = s1;
 - 이 경우는 복사가 된다.
 
+
 - heap메모리 복사는 clone
-let s1 = String::from("hello");
-let s2 = s1.clone();
+  let s1 = String::from("hello");
+  let s2 = s1.clone();
 
 --------------------------------------------
