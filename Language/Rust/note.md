@@ -33,4 +33,5 @@ let s2 = s1;
 heap메모리 복사는 clone
 let s1 = String::from("hello");
 let s2 = s1.clone();
+
 --------------------------------------------
